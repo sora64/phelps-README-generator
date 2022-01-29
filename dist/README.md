@@ -1,11 +1,11 @@
 
-  # README Generator
+  # s
 
-  
+  [![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
 
   ## Description
 
-    This application creates a professional README for a new project.
+  s
 
   ## Table of Contents
 
@@ -13,28 +13,36 @@
   - [Usage](#usage)
   
   
+  - [Tests](#tests)
+    
   - [Questions](#questions)
   - [License](#license)
 
   ## Installation
 
-    Make sure to run 'npm install' to download the needed packages, and run the application in your terminal/console.
+  s
 
   ## Usage
 
-    To use this application, run the index.js file by typing 'node index' into your terminal. Then answer the prompts, checking over your responses for typos before hitting the enter/return key. Then check the 'dist' folder for your finished README!
+  s
 
 
 
 
 
+  ## Tests
+  aklsjdf;lkaj
+    
 
 
   ## Questions
 
-  - GitHub: [sora64](https://github.com/sora64/)
+  - GitHub: [s](https://github.com/s/)
 
-  - Email: [phelpsa64@gmail.com](mailto:phelpsa64@gmail.com)
+  - Email: [s](mailto:s)
 
 
+  ## License
+  [Eclipse](https://opensource.org/licenses/EPL-1.0)
+    
   

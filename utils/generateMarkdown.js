@@ -161,7 +161,7 @@ ${renderTestSection(data.tests)}
 
   - GitHub: [${data.github}](https://github.com/${data.github}/)
 
-  - Email: [${data.email}](mailto:${data.email})
+  - Email: If you have any other questions, please reach me at [${data.email}](mailto:${data.email}).
 
 ${renderLicenseSection(data.license)}
   `;
