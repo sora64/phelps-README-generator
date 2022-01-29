@@ -49,6 +49,12 @@ init()
     })
     .then(readmeMarkdown => {
         return writeToFile(readmeMarkdown);
+    })
+    .then(writeToFileResponse => {
+        console.log(writeToFileResponse);
+    })
+    .catch(err => {
+        console.log(err);
     });
 
 // function init() {}
