@@ -93,7 +93,8 @@ const renderLicenseSection = license => {
   } else {
     return `
   ## License
-  ${renderLicenseLink(license)}
+   
+  This application is covered under the ${renderLicenseLink(license)} license.
     `;
   };
 };
