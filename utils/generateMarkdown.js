@@ -1,26 +1,104 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function that returns a license badge based on which license is passed in
 const renderLicenseBadge = license => {
-  if (!license) {
+  if (license === 'Apache') {
+    return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+  } else if (license === 'Boost') {
+    return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)';
+  } else if (license === 'Eclipse') {
+    return '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)';
+  } else if (license === 'GNU GPL v3') {
+    return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+  } else if (license === 'IBM') {
+    return '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)';
+  } else if (license === 'ISC') {
+    return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
+  } else if (license === 'MIT') {
+    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+  } else if (license === 'Mozilla') {
+    return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)';
+  } else if (license === 'SIL') {
+    return '[![License: Open Font-1.1](https://img.shields.io/badge/License-OFL_1.1-lightgreen.svg)](https://opensource.org/licenses/OFL-1.1)';
+  } else if (license === 'Unlicense') {
+    return '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)';
+  } else if (license === 'WTFPL') {
+    return '[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)';
+  } else if (license === 'Zlib') {
+    return '[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)';
+  } else if (license === 'none') {
     return '';
-  }
-
-  return `
-    ${license}
-  `;
+  };
 };
 
-// function renderLicenseBadge(license) {}
+// Function that returns the license link
+const renderLicenseLink = license => {
+  if (license === 'Apache') {
+    return '[Apache](https://opensource.org/licenses/Apache-2.0)';
+  } else if (license === 'Boost') {
+    return '[Boost](https://www.boost.org/LICENSE_1_0.txt)';
+  } else if (license === 'Eclipse') {
+    return '[Eclipse](https://opensource.org/licenses/EPL-1.0)';
+  } else if (license === 'GNU GPL v3') {
+    return '[GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0)';
+  } else if (license === 'IBM') {
+    return '[IBM](https://opensource.org/licenses/IPL-1.0)';
+  } else if (license === 'ISC') {
+    return '[ISC](https://opensource.org/licenses/ISC)';
+  } else if (license === 'MIT') {
+    return '[MIT](https://opensource.org/licenses/MIT)';
+  } else if (license === 'Mozilla') {
+    return '[Mozilla](https://opensource.org/licenses/MPL-2.0)';
+  } else if (license === 'SIL') {
+    return '[SIL](https://opensource.org/licenses/OFL-1.1)';
+  } else if (license === 'Unlicense') {
+    return '[Unlicense](http://unlicense.org/)';
+  } else if (license === 'WTFPL') {
+    return '[WTFPL](http://www.wtfpl.net/about/)';
+  } else if (license === 'Zlib') {
+    return '[Zlib](https://opensource.org/licenses/Zlib)';
+  } else if (license === 'none') {
+    return '';
+  };
+};
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// Function that returns the contributing section of README
+const renderContributingSection = contributing => {
+  if (!contributing) {
+    return '';
+ } else {
+    return `
+  ## Contributing
+  ${contributing}
+    `;
+  }
+};
 
-// TODO: Create a function to generate markdown for README
+// Function that returns the tests section of README
+const renderTestSection = tests => {
+  if (!tests) {
+    return '';
+ } else {
+    return `
+  ## Tests
+  ${tests}
+    `;
+  }
+};
+
+// Function that returns the license section of README
+const renderLicenseSection = license => {
+
+  if (license === 'none') {
+    return '';
+  } else {
+    return `
+  ## License
+  ${renderLicenseLink(license)}
+    `;
+  };
+};
+
+// Function to generate markdown for README
 
 module.exports = generateMarkdown => {
   const data = generateMarkdown;
@@ -29,51 +107,42 @@ module.exports = generateMarkdown => {
 
   return `
   # ${data.title}
+
+  ${renderLicenseBadge(data.license)}
+
   ## Description
 
-  Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-  - What was your motivation?
-  - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-  - What problem does it solve?
-  - What did you learn?
+  ${data.description}
 
   ## Table of Contents (Optional)
 
-  If your README is long, add a table of contents to make it easy for users to find what they need.
-
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
+  - [Contributions](#contributions)
+  - [Tests](#tests)
+  - [Questions](#questions)
   - [License](#license)
 
   ## Installation
 
-  What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+  ${data.installation}
 
   ## Usage
 
-  Provide instructions and examples for use. Include screenshots as needed.
+  ${data.usage}
 
-  To add a screenshot, create an  folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+${renderContributingSection(data.contributing)}
 
-  ## Credits
 
-  List your collaborators, if any, with links to their GitHub profiles.
+${renderTestSection(data.tests)}
 
-  If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
-  If you followed tutorials, include links to those here as well.
+  ## Questions
 
-  ## License
+  - GitHub: [${data.github}](https://github.com/${data.github}/)
 
-  The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+  - Email: [${data.email}](mailto:${data.email})
+
+${renderLicenseSection(data.license)}
   `;
 };
-
-// function generateMarkdown(data) {
-//   return `
-//   # ${data.title}
-
-//   `;
-// };
