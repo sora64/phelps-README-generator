@@ -1,35 +1,30 @@
 
-  # s
+  # README Generator
 
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  
 
   ## Description
 
-  s
+    This application creates a professional README for a new project.
 
   ## Table of Contents
 
   - [Installation](#installation)
   - [Usage](#usage)
   
-  - [Contributing](#contributing)
-    
   
   - [Questions](#questions)
   - [License](#license)
 
   ## Installation
 
-  s
+    Make sure to run 'npm install' to download the needed packages, and run the application in your terminal/console.
 
   ## Usage
 
-  s
+    To use this application, run the index.js file by typing 'node index' into your terminal. Then answer the prompts, checking over your responses for typos before hitting the enter/return key. Then check the 'dist' folder for your finished README!
 
 
-  ## Contributing
-  o
-    
 
 
 
@@ -37,12 +32,9 @@
 
   ## Questions
 
-  - GitHub: [s](https://github.com/s/)
+  - GitHub: [sora64](https://github.com/sora64/)
 
-  - Email: [s](mailto:s)
+  - Email: [phelpsa64@gmail.com](mailto:phelpsa64@gmail.com)
 
 
-  ## License
-  [Apache](https://opensource.org/licenses/Apache-2.0)
-    
   
