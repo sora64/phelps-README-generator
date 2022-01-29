@@ -118,6 +118,16 @@ const testsTableLink = tests => {
   }
 };
 
+const licenseTableLink = license => {
+  if (license === 'none') {
+    return '';
+ } else {
+    return `
+  - [License](#license)
+    `;
+  }
+};
+
 // Function to generate markdown for README
 
 module.exports = generateMarkdown => {
@@ -141,7 +151,7 @@ module.exports = generateMarkdown => {
   ${contributingTableLink(data.contributing)}
   ${testsTableLink(data.tests)}
   - [Questions](#questions)
-  - [License](#license)
+  ${licenseTableLink(data.license)}
 
   ## Installation
 

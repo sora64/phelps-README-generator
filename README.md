@@ -8,10 +8,7 @@
 
   - [Installation](#installation)
   - [Usage](#usage)
-  
-  
   - [Questions](#questions)
-  - [License](#license)
 
   ## Installation
 
@@ -25,4 +22,4 @@
 
   - GitHub: [sora64](https://github.com/sora64/)
 
-  - Email: [phelpsa64@gmail.com](mailto:phelpsa64@gmail.com)
+  - Email: If you have any other questions, please reach me at [phelpsa64@gmail.com](mailto:phelpsa64@gmail.com).
