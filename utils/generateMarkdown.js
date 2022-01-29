@@ -98,6 +98,26 @@ const renderLicenseSection = license => {
   };
 };
 
+const contributingTableLink = contributing => {
+  if (!contributing) {
+    return '';
+ } else {
+    return `
+  - [Contributing](#contributing)
+    `;
+  }
+};
+
+const testsTableLink = tests => {
+  if (!tests) {
+    return '';
+ } else {
+    return `
+  - [Tests](#tests)
+    `;
+  }
+};
+
 // Function to generate markdown for README
 
 module.exports = generateMarkdown => {
@@ -114,12 +134,12 @@ module.exports = generateMarkdown => {
 
   ${data.description}
 
-  ## Table of Contents (Optional)
+  ## Table of Contents
 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributions](#contributions)
-  - [Tests](#tests)
+  ${contributingTableLink(data.contributing)}
+  ${testsTableLink(data.tests)}
   - [Questions](#questions)
   - [License](#license)
 

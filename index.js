@@ -75,6 +75,14 @@ const init = () => {
                 } else {
                     return false;
                 }
+            },
+            validate: contributingInput => {
+                if (contributingInput) {
+                    return true;
+                } else {
+                    console.log('Please enter contributing instructions!');
+                    return false;
+                }
             }
         },
         {
@@ -91,6 +99,14 @@ const init = () => {
                 if (confirmTests) {
                     return true;
                 } else {
+                    return false;
+                }
+            },
+            validate: testsInput => {
+                if (testsInput) {
+                    return true;
+                } else {
+                    console.log('Please enter testing information!');
                     return false;
                 }
             }
