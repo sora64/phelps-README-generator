@@ -1,11 +1,11 @@
 
-  # Sample Project
+  # sk8spotter
 
-  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  
 
   ## Description
 
-  This is a sample README.
+  The app will make finding local skateparks easier for skaters. Users can view skateparks in RVA along with images of each skatepark. The app will make it possible for users to leave comments that persist for others in the skateboarding community and will allow them to find new or undiscovered skateparks. In the future, users will be able to add images that persist for each skatepark. We’re hoping this website can be an online community hub for local skateboarders.
 
   ## Table of Contents
 
@@ -15,42 +15,31 @@
   - [Contributing](#contributing)
     
   
-  - [Tests](#tests)
-    
   - [Questions](#questions)
   
-  - [License](#license)
-    
 
   ## Installation
 
-  This is a sample README, and needs no installation instructions.
+  After cloning the GitHub repository, make sure to run "npm i" to install the required node module packages. Then open up a MySQL shell and run "source db/schema.sql" to create the database. Next, run "npm run seed" to seed that database. Finally, run "npm start" to begin the application. You may also visit the application at its deployed URL on Heroku.
 
   ## Usage
 
-  This is to be used as a sample README.
+  This app is a community hub for connecting skateboarders in the Richmond, VA area.
 
 
   ## Contributing
-  No contributions needed.
+  If you have experience with making user-uploaded images persistent within a database, please contact us if you would like to contribute!
     
 
 
 
-  ## Tests
-  No tests needed.
-    
 
 
   ## Questions
 
-  - GitHub: [sora64](https://github.com/sora64/)
+  - GitHub: [sora64](https://github.com/sora64/) | [whosshazo](https://github.com/whosshazo) | [Tthompson8416](https://github.com/Tthompson8416) | [cldunham](https://github.com/cldunham)
 
-  - Email: If you have any other questions, please reach me at [phelpsa64@gmail.com](mailto:phelpsa64@gmail.com).
+  - Email: If you have any other questions, please reach us at [phelpsa64@gmail.com](mailto:phelpsa64@gmail.com)
 
 
-  ## License
-   
-  This application is covered under the [Mozilla](https://opensource.org/licenses/MPL-2.0) license.
-    
   
