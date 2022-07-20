@@ -1,35 +1,32 @@
 
-  # sk8spotter
+  # house-show
 
-  
+  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
   ## Description
 
-  The app will make finding local skateparks easier for skaters. Users can view skateparks in RVA along with images of each skatepark. The app will make it possible for users to leave comments that persist for others in the skateboarding community and will allow them to find new or undiscovered skateparks. In the future, users will be able to add images that persist for each skatepark. We’re hoping this website can be an online community hub for local skateboarders.
+  This application provides performing artists with a platform for seeking out and reserving venues, and provides venue hosts with a platform for booking artists.
 
   ## Table of Contents
 
   - [Installation](#installation)
   - [Usage](#usage)
   
-  - [Contributing](#contributing)
-    
   
   - [Questions](#questions)
   
+  - [License](#license)
+    
 
   ## Installation
 
-  After cloning the GitHub repository, make sure to run "npm i" to install the required node module packages. Then open up a MySQL shell and run "source db/schema.sql" to create the database. Next, run "npm run seed" to seed that database. Finally, run "npm start" to begin the application. You may also visit the application at its deployed URL on Heroku.
+  N/A
 
   ## Usage
 
-  This app is a community hub for connecting skateboarders in the Richmond, VA area.
+  [insert]
 
 
-  ## Contributing
-  If you have experience with making user-uploaded images persistent within a database, please contact us if you would like to contribute!
-    
 
 
 
@@ -37,9 +34,13 @@
 
   ## Questions
 
-  - GitHub: [sora64](https://github.com/sora64/) | [whosshazo](https://github.com/whosshazo) | [Tthompson8416](https://github.com/Tthompson8416) | [cldunham](https://github.com/cldunham)
+  - GitHub: [sora64](https://github.com/sora64/)
 
-  - Email: If you have any other questions, please reach us at [phelpsa64@gmail.com](mailto:phelpsa64@gmail.com)
+  - Email: If you have any other questions, please reach me at [phelpsa64@gmail.com](mailto:phelpsa64@gmail.com).
 
 
+  ## License
+   
+  This application is covered under the [ISC](https://opensource.org/licenses/ISC) license.
+    
   
