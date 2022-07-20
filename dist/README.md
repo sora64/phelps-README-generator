@@ -1,46 +1,44 @@
+# music-you-may-like
 
-  # house-show
+## Description
 
-  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+This application uses HTML5, CSS, and front-end JavaScript and the YouTube and LastFM third party APIs to let users discover new musical artists by searching for artists they already like, so they can learn more about music and artists outside their current music libraries.
 
-  ## Description
+## Table of Contents
 
-  This application provides performing artists with a platform for seeking out and reserving venues, and provides venue hosts with a platform for booking artists.
+- [Installation](#installation)
+- [Usage](#usage)
 
-  ## Table of Contents
+- [Contributing](#contributing)
 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  
-  
-  - [Questions](#questions)
-  
-  - [License](#license)
-    
+- [Questions](#questions)
 
-  ## Installation
+## Installation
 
-  N/A
+Download all of the files in this repository into a local directory, then open the index.html file in your browser. Alternatively, you may visit the website at the deployed URL, which is given below.
 
-  ## Usage
+## Usage
 
-  [insert]
+This application is to be used as a free alternative to Spotify or Apple Music to find new musical artists, no subscription required.
 
+## Contributing
 
+If you would like to collaborate, please reach out to me here on GitHub!
 
+## Deployed URL
 
+[Music-You-May-Like](https://tuckerlarrabee.github.io/Music-You-May-Like/)
 
+## Presentation
 
+[Music You May Like - Presentation](https://docs.google.com/
 
-  ## Questions
+## Screenshot
 
-  - GitHub: [sora64](https://github.com/sora64/)
+![Screenshot of Deployed Application](./assets/images/Music-You-May-Like_Screenshot.png) 
 
-  - Email: If you have any other questions, please reach me at [phelpsa64@gmail.com](mailto:phelpsa64@gmail.com).
+## Questions
 
+- GitHub: [sora64](https://github.com/sora64/)
 
-  ## License
-   
-  This application is covered under the [ISC](https://opensource.org/licenses/ISC) license.
-    
-  
+- Email: If you have any other questions, please reach me at [phelpsa64@gmail.com](mailto:phelpsa64@gmail.com).
